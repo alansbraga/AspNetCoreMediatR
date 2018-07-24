@@ -5,8 +5,6 @@
     <UserSecretsId>aspnet-Site-0FF3D165-8DCF-4A82-AB69-2DF970E2F982</UserSecretsId>
     <WebProject_DirectoryAccessLevelKey>0</WebProject_DirectoryAccessLevelKey>
     <LangVersion>7.1</LangVersion>
-    <ApplicationInsightsResourceId>/subscriptions/ef438bf7-63df-4135-8ef7-107d997d8ecc/resourcegroups/Reembolso-Demo/providers/microsoft.insights/components/Site</ApplicationInsightsResourceId>
-    <ApplicationInsightsAnnotationResourceId>/subscriptions/ef438bf7-63df-4135-8ef7-107d997d8ecc/resourcegroups/Reembolso-Demo/providers/microsoft.insights/components/Site</ApplicationInsightsAnnotationResourceId>
   </PropertyGroup>
 
   <ItemGroup>
