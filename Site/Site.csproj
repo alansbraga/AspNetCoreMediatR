@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-Site-0FF3D165-8DCF-4A82-AB69-2DF970E2F982</UserSecretsId>
+    <WebProject_DirectoryAccessLevelKey>0</WebProject_DirectoryAccessLevelKey>
+    <LangVersion>7.1</LangVersion>
+    <ApplicationInsightsResourceId>/subscriptions/ef438bf7-63df-4135-8ef7-107d997d8ecc/resourcegroups/Reembolso-Demo/providers/microsoft.insights/components/Site</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/ef438bf7-63df-4135-8ef7-107d997d8ecc/resourcegroups/Reembolso-Demo/providers/microsoft.insights/components/Site</ApplicationInsightsAnnotationResourceId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Domain\Pagamentos\**" />
+    <Compile Remove="Repository\Pagamentos\**" />
+    <Content Remove="Domain\Pagamentos\**" />
+    <Content Remove="Repository\Pagamentos\**" />
+    <EmbeddedResource Remove="Domain\Pagamentos\**" />
+    <EmbeddedResource Remove="Repository\Pagamentos\**" />
+    <None Remove="Domain\Pagamentos\**" />
+    <None Remove="Repository\Pagamentos\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flunt" Version="1.0.2" />
+    <PackageReference Include="MediatR" Version="5.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="5.0.2" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.AzureAD.UI" Version="2.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+    <PackageReference Include="MongoDB.Driver" Version="2.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+</Project>
